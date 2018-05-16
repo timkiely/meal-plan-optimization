@@ -1,0 +1,1669 @@
+Series Id:     APU0000701111
+Series Title:  Flour, white, all purpose, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Flour, white, all purpose, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000701111	2017	M12	0.462
+
+
+
+Series Id:     APU0000701311
+Series Title:  Rice, white, long grain, precooked (cost per pound/453.6 grams) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Rice, white, long grain, precooked (cost per pound/453.6 grams)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000701312
+Series Title:  Rice, white, long grain, uncooked, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Rice, white, long grain, uncooked, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000701312	2017	M12	0.711
+
+
+
+Series Id:     APU0000701321
+Series Title:  Spaghetti (cost per pound/453.6 grams) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Spaghetti (cost per pound/453.6 grams)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000701322
+Series Title:  Spaghetti and macaroni, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Spaghetti and macaroni, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000701322	2017	M12	1.235
+
+
+
+Series Id:     APU0000702111
+Series Title:  Bread, white, pan, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Bread, white, pan, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000702111	2017	M12	1.316
+
+
+
+Series Id:     APU0000702112
+Series Title:  Bread, French, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Bread, French, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000702211
+Series Title:  Bread, rye, pan (cost per pound/453.6 grams) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Bread, rye, pan (cost per pound/453.6 grams)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000702212
+Series Title:  Bread, whole wheat, pan, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Bread, whole wheat, pan, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000702212	2017	M12	1.970
+
+
+
+Series Id:     APU0000702213
+Series Title:  Bread, wheat blend, pan (cost per pound/453.6 grams) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Bread, wheat blend, pan (cost per pound/453.6 grams)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000702221
+Series Title:  Rolls, hamburger (cost per pound/453.6 grams) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Rolls, hamburger (cost per pound/453.6 grams)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000702411
+Series Title:  Cupcakes, chocolate (cost per pound/453.6 grams) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Cupcakes, chocolate (cost per pound/453.6 grams)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000702421
+Series Title:  Cookies, chocolate chip, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Cookies, chocolate chip, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000702421	2017	M12	3.601
+
+
+
+Series Id:     APU0000702611
+Series Title:  Crackers, soda, salted, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Crackers, soda, salted, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000703111
+Series Title:  Ground chuck, 100% beef, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Ground chuck, 100% beef, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000703111	2017	M12	3.729
+
+
+
+Series Id:     APU0000703112
+Series Title:  Ground beef, 100% beef, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Ground beef, 100% beef, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000703112	2017	M12	3.708
+
+
+
+Series Id:     APU0000703113
+Series Title:  Ground beef, lean and extra lean, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Ground beef, lean and extra lean, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000703113	2017	M12	5.516
+
+
+
+Series Id:     APU0000703211
+Series Title:  Chuck roast, USDA Choice, bone-in, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Chuck roast, USDA Choice, bone-in, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000703212
+Series Title:  Chuck roast, graded and ungraded, excluding USDA Prime and Choice, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Chuck roast, graded and ungraded, excluding USDA Prime and Choice, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000703212	2017	M12	4.624
+
+
+
+Series Id:     APU0000703213
+Series Title:  Chuck roast, USDA Choice, boneless, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Chuck roast, USDA Choice, boneless, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000703213	2017	M12	5.120
+
+
+
+Series Id:     APU0000703311
+Series Title:  Round roast, USDA Choice, boneless, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Round roast, USDA Choice, boneless, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000703311	2017	M12	5.020
+
+
+
+Series Id:     APU0000703312
+Series Title:  Round roast, graded and ungraded, excluding USDA Prime and Choice, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Round roast, graded and ungraded, excluding USDA Prime and Choice, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000703411
+Series Title:  Rib roast, USDA Choice, bone-in, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Rib roast, USDA Choice, bone-in, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000703421
+Series Title:  Steak, chuck, U.S. choice, bone-in (cost per pound/453.6 grams) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Steak, chuck, U.S. choice, bone-in (cost per pound/453.6 grams)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000703422
+Series Title:  Steak, T-Bone, USDA Choice, bone-in, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Steak, T-Bone, USDA Choice, bone-in, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000703423
+Series Title:  Steak, porterhouse, U.S. choice, bone-in (cost per pound/453.6 grams) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Steak, porterhouse, U.S. choice, bone-in (cost per pound/453.6 grams)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000703425
+Series Title:  Steak, rib eye, USDA Choice, boneless, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Steak, rib eye, USDA Choice, boneless, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000703431
+Series Title:  Short ribs, any primal source, bone-in, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Short ribs, any primal source, bone-in, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000703432
+Series Title:  Beef for stew, boneless, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Beef for stew, boneless, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000703432	2017	M12	5.343
+
+
+
+Series Id:     APU0000703511
+Series Title:  Steak, round, USDA Choice, boneless, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Steak, round, USDA Choice, boneless, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000703511	2017	M12	5.832
+
+
+
+Series Id:     APU0000703512
+Series Title:  Steak, round, graded and ungraded, excluding USDA Prime and Choice, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Steak, round, graded and ungraded, excluding USDA Prime and Choice, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000703512	2017	M12	5.943
+
+
+
+Series Id:     APU0000703611
+Series Title:  Steak, sirloin, USDA Choice, bone-in, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Steak, sirloin, USDA Choice, bone-in, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000703612
+Series Title:  Steak, sirloin, graded and ungraded, excluding USDA Prime and Choice, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Steak, sirloin, graded and ungraded, excluding USDA Prime and Choice, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000703612	2017	M12	7.423
+
+
+
+Series Id:     APU0000703613
+Series Title:  Steak, sirloin, USDA Choice, boneless, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Steak, sirloin, USDA Choice, boneless, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000703613	2017	M12	7.927
+
+
+
+Series Id:     APU0000704111
+Series Title:  Bacon, sliced, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Bacon, sliced, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000704111	2017	M12	5.629
+
+
+
+Series Id:     APU0000704211
+Series Title:  Chops, center cut, bone-in, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Chops, center cut, bone-in, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000704211	2017	M12	3.809
+
+
+
+Series Id:     APU0000704212
+Series Title:  Chops, boneless, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Chops, boneless, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000704212	2017	M12	3.664
+
+
+
+Series Id:     APU0000704311
+Series Title:  Ham, rump or shank half, bone-in, smoked,per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Ham, rump or shank half, bone-in, smoked,per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000704312
+Series Title:  Ham, boneless, excluding canned, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Ham, boneless, excluding canned, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000704312	2017	M12	3.869
+
+
+
+Series Id:     APU0000704313
+Series Title:  Ham, rump portion, bone-in, smoked (cost per pound/453.6 grams) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Ham, rump portion, bone-in, smoked (cost per pound/453.6 grams)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000704314
+Series Title:  Ham, shank portion, bone-in, smoked (cost per pound/453.6 grams) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Ham, shank portion, bone-in, smoked (cost per pound/453.6 grams)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000704321
+Series Title:  Ham, canned, 3 or 5 lbs, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Ham, canned, 3 or 5 lbs, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000704411
+Series Title:  Pork shoulder roast, blade boston, bone-in (cost per pound/453.6 grams) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Pork shoulder roast, blade boston, bone-in (cost per pound/453.6 grams)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000704412
+Series Title:  Pork sirloin roast, bone-in (cost per pound/453.6 grams) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Pork sirloin roast, bone-in (cost per pound/453.6 grams)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000704413
+Series Title:  Shoulder picnic, bone-in, smoked, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Shoulder picnic, bone-in, smoked, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000704421
+Series Title:  Sausage, fresh, loose, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Sausage, fresh, loose, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000705111
+Series Title:  Frankfurters, all meat or all beef, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Frankfurters, all meat or all beef, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000705111	2017	M12	2.925
+
+
+
+Series Id:     APU0000705121
+Series Title:  Bologna, all beef or mixed, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Bologna, all beef or mixed, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000705121	2017	M12	2.808
+
+
+
+Series Id:     APU0000705141
+Series Title:  Beef liver (cost per pound/453.6 grams) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Beef liver (cost per pound/453.6 grams)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000705142
+Series Title:  Lamb and mutton, bone-in, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Lamb and mutton, bone-in, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000706111
+Series Title:  Chicken, fresh, whole, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Chicken, fresh, whole, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000706111	2017	M12	1.470
+
+
+
+Series Id:     APU0000706211
+Series Title:  Chicken breast, bone-in, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Chicken breast, bone-in, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000706212
+Series Title:  Chicken legs, bone-in, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Chicken legs, bone-in, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000706212	2017	M12	1.461
+
+
+
+Series Id:     APU0000706311
+Series Title:  Turkey, frozen, whole, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Turkey, frozen, whole, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000706311	2017	M12	1.502
+
+
+
+Series Id:     APU0000707111
+Series Title:  Tuna, light, chunk, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Tuna, light, chunk, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000708111
+Series Title:  Eggs, grade A, large, per doz. in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Eggs, grade A, large, per doz.
+
+
+Series Id	Year	Period	Value
+APU0000708111	2017	M12	1.815
+
+
+
+Series Id:     APU0000708112
+Series Title:  Eggs, grade AA, large, per doz. in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Eggs, grade AA, large, per doz.
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000709111
+Series Title:  Milk, fresh, whole, fortified, per 1/2 gal. (1.9 lit) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Milk, fresh, whole, fortified, per 1/2 gal. (1.9 lit)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000709112
+Series Title:  Milk, fresh, whole, fortified, per gal. (3.8 lit) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Milk, fresh, whole, fortified, per gal. (3.8 lit)
+
+
+Series Id	Year	Period	Value
+APU0000709112	2017	M12	3.155
+
+
+
+Series Id:     APU0000709211
+Series Title:  Milk, fresh, skim (cost per one-half gallon/1.9 liters) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Milk, fresh, skim (cost per one-half gallon/1.9 liters)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000709212
+Series Title:  Milk, fresh, low fat, per 1/2 gal. (1.9 lit) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Milk, fresh, low fat, per 1/2 gal. (1.9 lit)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000709213
+Series Title:  Milk, fresh, low fat, per gal. (3.8 lit) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Milk, fresh, low fat, per gal. (3.8 lit)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000710111
+Series Title:  Butter, salted, grade AA, stick, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Butter, salted, grade AA, stick, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000710122
+Series Title:  Yogurt, natural, fruit flavored, per 8 oz. (226.8 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Yogurt, natural, fruit flavored, per 8 oz. (226.8 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000710211
+Series Title:  American processed cheese, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          American processed cheese, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000710211	2017	M12	4.130
+
+
+
+Series Id:     APU0000710212
+Series Title:  Cheddar cheese, natural, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Cheddar cheese, natural, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000710212	2017	M12	4.950
+
+
+
+Series Id:     APU0000710411
+Series Title:  Ice cream, prepackaged, bulk, regular, per 1/2 gal. (1.9 lit) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Ice cream, prepackaged, bulk, regular, per 1/2 gal. (1.9 lit)
+
+
+Series Id	Year	Period	Value
+APU0000710411	2017	M12	4.758
+
+
+
+Series Id:     APU0000711111
+Series Title:  Apples, Red Delicious, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Apples, Red Delicious, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000711211
+Series Title:  Bananas, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Bananas, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000711211	2017	M12	0.558
+
+
+
+Series Id:     APU0000711311
+Series Title:  Oranges, Navel, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Oranges, Navel, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000711311	2017	M12	1.315
+
+
+
+Series Id:     APU0000711312
+Series Title:  Oranges, Valencia, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Oranges, Valencia, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000711411
+Series Title:  Grapefruit, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Grapefruit, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000711411	2017	M12	1.330
+
+
+
+Series Id:     APU0000711412
+Series Title:  Lemons, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Lemons, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000711412	2017	M12	1.989
+
+
+
+Series Id:     APU0000711413
+Series Title:  Pears, Anjou, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Pears, Anjou, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000711413	2017	M12	1.545
+
+
+
+Series Id:     APU0000711414
+Series Title:  Peaches, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Peaches, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000711415
+Series Title:  Strawberries, dry pint, per 12 oz. (340.2 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Strawberries, dry pint, per 12 oz. (340.2 gm)
+
+
+Series Id	Year	Period	Value
+APU0000711415	2017	M12	3.089
+
+
+
+Series Id:     APU0000711416
+Series Title:  Grapes, Emperor or Tokay (cost per pound/453.6 grams) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Grapes, Emperor or Tokay (cost per pound/453.6 grams)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000711417
+Series Title:  Grapes, Thompson Seedless, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Grapes, Thompson Seedless, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000711417	2017	M12	2.606
+
+
+
+Series Id:     APU0000711418
+Series Title:  Cherries, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Cherries, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000712111
+Series Title:  Potatoes, white (cost per pound/453.6 grams) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Potatoes, white (cost per pound/453.6 grams)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000712112
+Series Title:  Potatoes, white, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Potatoes, white, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000712112	2017	M12	0.731
+
+
+
+Series Id:     APU0000712211
+Series Title:  Lettuce, iceberg, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Lettuce, iceberg, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000712211	2017	M12	1.008
+
+
+
+Series Id:     APU0000712311
+Series Title:  Tomatoes, field grown, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Tomatoes, field grown, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000712311	2017	M12	2.237
+
+
+
+Series Id:     APU0000712401
+Series Title:  Cabbage, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Cabbage, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000712402
+Series Title:  Celery, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Celery, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000712403
+Series Title:  Carrots, short trimmed and topped, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Carrots, short trimmed and topped, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000712404
+Series Title:  Onions, dry yellow, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Onions, dry yellow, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000712405
+Series Title:  Onions, green scallions (cost per pound/453.6 grams) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Onions, green scallions (cost per pound/453.6 grams)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000712406
+Series Title:  Peppers, sweet, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Peppers, sweet, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000712406	2017	M12	2.422
+
+
+
+Series Id:     APU0000712407
+Series Title:  Corn on the cob, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Corn on the cob, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000712408
+Series Title:  Radishes (cost per pound/453.6 grams) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Radishes (cost per pound/453.6 grams)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000712409
+Series Title:  Cucumbers, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Cucumbers, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000712410
+Series Title:  Beans, green, snap (cost per pound/453.6 grams) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Beans, green, snap (cost per pound/453.6 grams)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000712411
+Series Title:  Mushrooms (cost per pound/453.6 grams) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Mushrooms (cost per pound/453.6 grams)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000712412
+Series Title:  Broccoli, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Broccoli, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000712412	2017	M12	1.765
+
+
+
+Series Id:     APU0000713111
+Series Title:  Orange juice, frozen concentrate, 12 oz. can, per 16 oz. (473.2 ml) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Orange juice, frozen concentrate, 12 oz. can, per 16 oz. (473.2 ml)
+
+
+Series Id	Year	Period	Value
+APU0000713111	2017	M12	2.615
+
+
+
+Series Id:     APU0000713311
+Series Title:  Apple Sauce, any variety, all sizes, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Apple Sauce, any variety, all sizes, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000713312
+Series Title:  Peaches, any variety, all sizes, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Peaches, any variety, all sizes, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000714111
+Series Title:  Potatoes, frozen, French fried, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Potatoes, frozen, French fried, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000714221
+Series Title:  Corn, canned, any style, all sizes, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Corn, canned, any style, all sizes, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000714231
+Series Title:  Tomatoes, canned, whole, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Tomatoes, canned, whole, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000714232
+Series Title:  Tomatoes, canned, any type, all sizes,  per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Tomatoes, canned, any type, all sizes,  per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000714233
+Series Title:  Beans, dried, any type, all sizes, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Beans, dried, any type, all sizes, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000714233	2017	M12	1.368
+
+
+
+Series Id:     APU0000715111
+Series Title:  Hard candy, solid (cost per pound/453.6 grams) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Hard candy, solid (cost per pound/453.6 grams)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000715211
+Series Title:  Sugar, white, all sizes, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Sugar, white, all sizes, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000715211	2017	M12	0.646
+
+
+
+Series Id:     APU0000715212
+Series Title:  Sugar, white, 33-80 oz. pkg, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Sugar, white, 33-80 oz. pkg, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000715311
+Series Title:  Jelly (cost per pound/453.6 grams) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Jelly (cost per pound/453.6 grams)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000716111
+Series Title:  Margarine, vegetable oil blends, stick (cost per pound/453.6 grams) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Margarine, vegetable oil blends, stick (cost per pound/453.6 grams)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000716113
+Series Title:  Margarine, vegetable oil blends, soft, tubs (cost per pound/453.6 grams) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Margarine, vegetable oil blends, soft, tubs (cost per pound/453.6 grams)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000716114
+Series Title:  Margarine, stick, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Margarine, stick, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000716116
+Series Title:  Margarine, soft, tubs, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Margarine, soft, tubs, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000716116	2017	M12	1.697
+
+
+
+Series Id:     APU0000716121
+Series Title:  Shortening, vegetable oil blends, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Shortening, vegetable oil blends, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000716141
+Series Title:  Peanut butter, creamy, all sizes, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Peanut butter, creamy, all sizes, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000716141	2017	M12	2.480
+
+
+
+Series Id:     APU0000717111
+Series Title:  Cola, non-diet, return bottles, 6 or 8 pack (cost per 16 ounces/473.2 ml) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Cola, non-diet, return bottles, 6 or 8 pack (cost per 16 ounces/473.2 ml)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000717112
+Series Title:  Cola, non diet, return bottles, 24-40 ounce (cost per 16 ounces/473.2 ml) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Cola, non diet, return bottles, 24-40 ounce (cost per 16 ounces/473.2 ml)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000717113
+Series Title:  Cola, nondiet, cans, 72 oz. 6 pk., per 16 oz. (473.2 ml) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Cola, nondiet, cans, 72 oz. 6 pk., per 16 oz. (473.2 ml)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000717114
+Series Title:  Cola, nondiet, per 2 liters (67.6 oz) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Cola, nondiet, per 2 liters (67.6 oz)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000717311
+Series Title:  Coffee, 100%, ground roast, all sizes, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Coffee, 100%, ground roast, all sizes, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000717311	2017	M12	4.285
+
+
+
+Series Id:     APU0000717312
+Series Title:  Coffee, 100%, ground roast, 13.1-20 oz. can, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Coffee, 100%, ground roast, 13.1-20 oz. can, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000717324
+Series Title:  Coffee, instant, plain, regular, 6.1-14 ounce (cost per 16 ounces/453.6 grams) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Coffee, instant, plain, regular, 6.1-14 ounce (cost per 16 ounces/453.6 grams)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000717325
+Series Title:  Coffee, freeze dried, regular, all sizes (cost per 16 ounces/453.6 grams) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Coffee, freeze dried, regular, all sizes (cost per 16 ounces/453.6 grams)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000717326
+Series Title:  Coffee, freeze dried, decaf., all sizes (cost per 16 ounces/453.6 grams) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Coffee, freeze dried, decaf., all sizes (cost per 16 ounces/453.6 grams)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000717327
+Series Title:  Coffee, instant, plain, regular, all sizes, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Coffee, instant, plain, regular, all sizes, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000717411
+Series Title:  Coffee, instant, plain, 9.1-14 ounce (cost per 16 ounces/453.6 grams) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Coffee, instant, plain, 9.1-14 ounce (cost per 16 ounces/453.6 grams)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000717412
+Series Title:  Coffee, instant, plain, 3.1-6 ounce (cost per 16 ounces/453.6 grams) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Coffee, instant, plain, 3.1-6 ounce (cost per 16 ounces/453.6 grams)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000717413
+Series Title:  Coffee, freeze dried, plain, 3.1-9 ounce (cost per 16 ounces/453.6 grams) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Coffee, freeze dried, plain, 3.1-9 ounce (cost per 16 ounces/453.6 grams)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000718311
+Series Title:  Potato chips, per 16 oz. in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Potato chips, per 16 oz.
+
+
+Series Id	Year	Period	Value
+APU0000718311	2017	M12	4.431
+
+
+
+Series Id:     APU0000718631
+Series Title:  Pork and beans, canned (cost per 16 ounces/453.6 grams) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Pork and beans, canned (cost per 16 ounces/453.6 grams)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000720111
+Series Title:  Malt beverages, all types, all sizes, any origin, per 16 oz. (473.2 ml) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Malt beverages, all types, all sizes, any origin, per 16 oz. (473.2 ml)
+
+
+Series Id	Year	Period	Value
+APU0000720111	2017	M12	1.421
+
+
+
+Series Id:     APU0000720211
+Series Title:  Bourbon whiskey, 375 ml-1.75 liter (cost per 25.4 ounces/750 ml) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Bourbon whiskey, 375 ml-1.75 liter (cost per 25.4 ounces/750 ml)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000720221
+Series Title:  Vodka, domestic, 375 ml-1.75 liter (cost per 25.4 ounces/750 ml) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Vodka, domestic, 375 ml-1.75 liter (cost per 25.4 ounces/750 ml)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000720222
+Series Title:  Vodka, all types, all sizes, any origin, per 1 liter (33.8 oz) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Vodka, all types, all sizes, any origin, per 1 liter (33.8 oz)
+
+
+Series Id	Year	Period	Value
+APU0000720222	2017	M12	14.856
+
+
+
+Series Id:     APU0000720311
+Series Title:  Wine, red and white table, all sizes, any origin, per 1 liter (33.8 oz) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Wine, red and white table, all sizes, any origin, per 1 liter (33.8 oz)
+
+
+Series Id	Year	Period	Value
+APU0000720311	2017	M12	12.925
+
+
+
+Series Id:     APU000072511
+Series Title:  Fuel oil #2 per gallon (3.785 liters) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Fuel oil #2 per gallon (3.785 liters)
+
+
+Series Id	Year	Period	Value
+APU000072511	2017	M12	2.703
+
+
+
+Series Id:     APU000072601
+Series Title:  Utility (piped) gas - 40 therms in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Utility (piped) gas - 40 therms
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU000072610
+Series Title:  Electricity per KWH in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Electricity per KWH
+
+
+Series Id	Year	Period	Value
+APU000072610	2017	M12	0.136
+
+
+
+Series Id:     APU000072611
+Series Title:  Utility (piped) gas - 100 therms in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Utility (piped) gas - 100 therms
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU000072620
+Series Title:  Utility (piped) gas per therm in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Utility (piped) gas per therm
+
+
+Series Id	Year	Period	Value
+APU000072620	2017	M12	1.042
+
+
+
+Series Id:     APU000072621
+Series Title:  Electricity per 500 KWH in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Electricity per 500 KWH
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU000074712
+Series Title:  Gasoline, leaded regular (cost per gallon/3.8 liters) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Gasoline, leaded regular (cost per gallon/3.8 liters)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU000074713
+Series Title:  Gasoline, leaded premium (cost per gallon/3.8 liters) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Gasoline, leaded premium (cost per gallon/3.8 liters)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU000074714
+Series Title:  Gasoline, unleaded regular, per gallon/3.785 liters in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Gasoline, unleaded regular, per gallon/3.785 liters
+
+
+Series Id	Year	Period	Value
+APU000074714	2017	M12	2.459
+
+
+
+Series Id:     APU000074715
+Series Title:  Gasoline, unleaded midgrade, per gallon/3.785 liters in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Gasoline, unleaded midgrade, per gallon/3.785 liters
+
+
+Series Id	Year	Period	Value
+APU000074715	2017	M12	2.776
+
+
+
+Series Id:     APU000074716
+Series Title:  Gasoline, unleaded premium, per gallon/3.785 liters in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Gasoline, unleaded premium, per gallon/3.785 liters
+
+
+Series Id	Year	Period	Value
+APU000074716	2017	M12	2.985
+
+
+
+Series Id:     APU000074717
+Series Title:  Automotive diesel fuel, per gallon/3.785 liters in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Automotive diesel fuel, per gallon/3.785 liters
+
+
+Series Id	Year	Period	Value
+APU000074717	2017	M12	2.886
+
+
+
+Series Id:     APU00007471A
+Series Title:  Gasoline, all types, per gallon/3.785 liters in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Gasoline, all types, per gallon/3.785 liters
+
+
+Series Id	Year	Period	Value
+APU00007471A	2017	M12	2.521
+
+
+
+Series Id:     APU0000FC1101
+Series Title:  All uncooked ground beef, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          All uncooked ground beef, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000FC1101	2017	M12	4.128
+
+
+
+Series Id:     APU0000FC2101
+Series Title:  All Uncooked Beef Roasts, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          All Uncooked Beef Roasts, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000FC2101	2017	M12	5.207
+
+
+
+Series Id:     APU0000FC3101
+Series Title:  All Uncooked Beef Steaks, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          All Uncooked Beef Steaks, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000FC3101	2017	M12	7.364
+
+
+
+Series Id:     APU0000FC4101
+Series Title:  All Uncooked Other Beef (Excluding Veal), per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          All Uncooked Other Beef (Excluding Veal), per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000FC4101	2017	M12	4.653
+
+
+
+Series Id:     APU0000FD2101
+Series Title:  All Ham (Excluding Canned Ham and Luncheon Slices), per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          All Ham (Excluding Canned Ham and Luncheon Slices), per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000FD2101	2017	M12	2.914
+
+
+
+Series Id:     APU0000FD3101
+Series Title:  All Pork Chops, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          All Pork Chops, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000FD3101	2017	M12	3.302
+
+
+
+Series Id:     APU0000FD4101
+Series Title:  All Other Pork (Excluding Canned Ham and Luncheon Slices), per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          All Other Pork (Excluding Canned Ham and Luncheon Slices), per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000FD4101	2017	M12	2.596
+
+
+
+Series Id:     APU0000FF1101
+Series Title:  Chicken breast, boneless, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Chicken breast, boneless, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000FF1101	2017	M12	3.192
+
+
+
+Series Id:     APU0000FJ1101
+Series Title:  Milk, fresh, low-fat, reduced fat, skim, per gal. (3.8 lit) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Milk, fresh, low-fat, reduced fat, skim, per gal. (3.8 lit)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000FJ4101
+Series Title:  Yogurt, per 8 oz. (226.8 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Yogurt, per 8 oz. (226.8 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000FL2101
+Series Title:  Lettuce, romaine, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Lettuce, romaine, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+APU0000FL2101	2017	M12	2.159
+
+
+
+Series Id:     APU0000FN1101
+Series Title:  All soft drinks, per 2 liters (67.6 oz) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          All soft drinks, per 2 liters (67.6 oz)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000FN1102
+Series Title:  All soft drinks, 12 pk, 12 oz., cans, per 12 oz. (354.9 ml) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          All soft drinks, 12 pk, 12 oz., cans, per 12 oz. (354.9 ml)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
+
+Series Id:     APU0000FS1101
+Series Title:  Butter, stick, per lb. (453.6 gm) in U.S. city average, average price, not seasonally adjusted
+Area:          U.S. city average
+Item:          Butter, stick, per lb. (453.6 gm)
+
+
+Series Id	Year	Period	Value
+No Data Available for selected year(s)
+
