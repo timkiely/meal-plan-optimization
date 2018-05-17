@@ -3,8 +3,34 @@ title: "Meal Planning Optimization"
 output: github_document
 ---
 
+
+
 # INTRO
 This project directory contains code and data for a Meal Plan Optimization project as part of MSDS 460. 
+
+# Current QUESTIONS
+Can we map food price data to our food items? If we could do that, we could add cost as a goal constraint. Alternatively, we might want to pivot to doing a cost-optimization-only problem. 
+
+Another idea: Manually map nutrient data to the ~70 food items in the BLS food prices index. That dramatically reduces the complexity of the decision variables while also adding an interesting cost-dimension to the problem. Would only take a bit of time to map nutrients to costs. 
+
+# FORMULATION
+
+Each food item in the "Nurtiet Data" file represents a binary decision variable. Over the course of 5 days, any number of items can be selected for each day. Each food item has nutritional facts associated with it such as number of calories, grams of protein, carbs, etc. 
+
+Our decision variables will be foods to be selected for all meals in a day over the course of 5 days. Calories should approach 2000/day. Each food item should not be used more than once. 
+
+Our constraints will be a mixture of goal constraints and hard constriants. The minimum nutritional requirements will have to be met
+
+
+- Goals:
+    - Goal 1: Minimize Cost
+    - Goal 2: Maximize Variety
+- Constraints:
+    - Not too many carbs
+    - Not too much sugar
+    - etc. 
+    - Must meet all nutritional requirements
+    
 
 
 # DATA:
