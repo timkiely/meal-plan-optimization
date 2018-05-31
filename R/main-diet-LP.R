@@ -1,48 +1,11 @@
----
-title: "Diet Optimization Analysis"
-output: github_document
----
+
+library(tidyverse)
+library(lpSolve)
 
 
-
-# INTRO
-This project directory contains code and data for a Meal Plan Optimization project as part of MSDS 460. 
-
-# FORMULATION
-
-Each food item in the "Nurtiet Data" file represents a binary decision variable. Over the course of any number days, any number of items can be selected for each day. Each food item has nutritional facts associated with it such as number of calories, grams of protein, carbs, etc. 
-
-Our decision variables will be foods to be selected for all meals in a day over the course of 5-7 days. Calories should be between 2000 and 2,500/day. Each food item should not be used more than once over the course of the planning period. 
-
-Our constraint will be to minimize carbohydrate intake. 
-
-# DATA:
-- FOOD PRICES from [BLS](https://www.bls.gov/regions/mid-atlantic/data/averageretailfoodandenergyprices_usandwest_table.htm)
-- NUTRIENT REQUIREMENT DATA form [wikipedia](https://en.wikipedia.org/wiki/Dietary_Reference_Intake)
-- COMMON NUTRIENT COUNTS IN FOODS from [USDA](https://www.ars.usda.gov/northeast-area/beltsville-md-bhnrc/beltsville-human-nutrition-research-center/nutrient-data-laboratory/docs/sr28-download-files/)
-    - *Note* that the values of the nutriets (in the columns) are per 100g of the food item listed. For example "BUTTER, WITH SALT" has 15.87 g of water per 100 g of Butter with Salt 
-
-
-
-# PROGRAM
-
-```{r}
-suppressPackageStartupMessages({
-  library(tidyverse)
-  library(lpSolve)
-})
-```
-
-## Data
-```{r message=FALSE, warning=FALSE, paged.print=FALSE}
 nutriets <- read_csv("data/nutrient-categories.csv")
 constraints <- read_csv("data/nutrient-constraints.csv") %>% select(`Original Nutrient Name`:Unit)
-```
 
-
-## Processing
-
-```{r}
 # keep only the cross-section of both lists
 keep_names <- inner_join(data_frame(names = names(nutriets))
                          , data_frame(names = constraints$`Nutrient Name`)
@@ -76,40 +39,37 @@ nutriets <- nutriets %>%
                           , "CISCO", "INF FORMULA")
   ) %>% 
   filter(!grepl(c("BUTTER|OIL|MARGARINE|FAT|LARD"),Category, ignore.case = TRUE))
-```
 
 
-## Run the LP in a loop for n number of days
+# Run the LP --------------------------------------------------------------
 
-```{r}
-
-# how many days should we plan? (each day is a loop iteration)
+# how many days to plan? (will loop over)
 all_days <- 7
 
 
 foods_used <- c("WATER")
 all_results <- list()
-
 for(day in 1:all_days){
-
-  # for development purposes, sample the nutrients list. Set to 1 to use full list
+  # day <- 1
+  
+  # for development purposes, sample the nutrients list. 
   sample_size <- 1
   set.seed(1)
   sample_nutriets <- sample_frac(nutriets, sample_size)
   
-  # remove foods that have already been used, other than water
+  # remove foods that have already been used other than water
   foods_used <- foods_used[foods_used!="WATER"]
   sample_nutriets <- sample_nutriets %>% filter(!Category %in% foods_used)
   
   # set objective: minimize carbohydrates
   objective_function <- sample_nutriets$`Carbohydrt_(g)`
   
-  # initiate LHS constraint matrix
+  # initiate LHS matrix
   Left_Hand_Side <- matrix(numeric(nrow(sample_nutriets)), nrow = 1)
   
   # for each constraint, create a row in the LHS matrix
   for(i in 1:nrow(constraints)){
-    
+    # i <- 1
     contraint_row <- constraints[i,]
     constraint_name <- contraint_row$`Nutrient Name`
     constraint_lower <- contraint_row$`Lower Bound`
@@ -123,28 +83,43 @@ for(day in 1:all_days){
   # remove the initialization row at the top
   Left_Hand_Side <- Left_Hand_Side[2:nrow(Left_Hand_Side),]
   
-  # direction of the constraint lower and upper bound
+  # there are both lower and upper bounds on the constraints
   constraint_directions <- c(rep(">=", nrow(Left_Hand_Side))
                              ,rep("<=", nrow(Left_Hand_Side))
   )
   
-  # Lower and Upper bounds for RHS
+  # Lowe and Upper bounds for RHS
   Right_Hand_Side <- c(constraints$`Lower Bound`
                        , constraints$`Upper Bound`)
   
   # duplicate the LHS matrix since we have both upper and lower bounds
   Left_Hand_Side_all <- rbind(Left_Hand_Side, Left_Hand_Side)
   
-  ## check the rows and columns match up:
-  # all_equal(nrow(Left_Hand_Side_all)
-  #           , length(Right_Hand_Side)
-  #           , length(constraint_directions)
-  # )
-  # 
-  # all_equal(length(objective_function)
-  #           , ncol(Left_Hand_Side_all)
-  # )
-
+  # check the rows and columns match up:
+  all_equal(nrow(Left_Hand_Side_all)
+            , length(Right_Hand_Side)
+            , length(constraint_directions)
+  )
+  
+  all_equal(length(objective_function)
+            , ncol(Left_Hand_Side_all)
+  )
+  
+  
+  # time benchmarks:
+  # non-binary:
+  # 1% of nutrients: no solution
+  # 10% of nutrients: <1 sec
+  # 20% of nutrients: <1 sec
+  # 100% in 0.03 seconds
+  
+  
+  # binary:
+  # 1% of nutrients: no solution
+  # 10% of nutrients: no solution
+  # 20% of nutrients: 5.03 mins
+  # 25% of nutrients: 5.03 mins
+  
   lp_time_start <- Sys.time()
   (LP_Solved <- lp(direction = "min"
                    , objective.in = objective_function
@@ -160,34 +135,19 @@ for(day in 1:all_days){
   ))
   (lp_time <- Sys.time()-lp_time_start)
   
-  
-  # record results
   result_objective <- LP_Solved$objval
-  
   results <- data_frame(
     Food = sample_nutriets$Category[LP_Solved$solution>0]
     ,`Amount(g)` = LP_Solved$solution[LP_Solved$solution>0]
   )
-  
   results$Day <- as.integer(day)
-  
   all_results[[day]] <- results
-  
-  # record foods used so they will be removed from subsequent loop
   foods_used <- c(foods_used, results$Food)
   
-  # display info
-  message("DAY ",day, ": ", length(results$Food)," items selected. "
-          ,scales::percent(sample_size), " of data used. LP completed in "
-          ,round(lp_time,2), units(lp_time))
+  message("DAY ",day, ": ", length(results$Food)," items selected. ",scales::percent(sample_size), " of data used. LP completed in ",round(lp_time,2), units(lp_time))
 }
 
-```
 
-
-## View results
-
-```{r paged.print=FALSE}
 # print results:
 max_len <- max(map_dbl(all_results, nrow))
 blank_rows <- data_frame(rownum = 1:max_len)
@@ -206,15 +166,4 @@ all_results_print <- all_results %>%
     .x %>% select(-Day)
   }) %>% 
   bind_cols()
-
-knitr::kable(all_results_print[,1:6])
-```
-
-
-```{r message=FALSE, warning=FALSE, paged.print=FALSE}
-knitr::kable(all_results_print[,7:14])
-```
-
-
-
 
