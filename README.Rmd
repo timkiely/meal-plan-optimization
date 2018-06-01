@@ -6,21 +6,19 @@ output: github_document
 
 
 # INTRO
+
 This project directory contains code and data for a Meal Plan Optimization project as part of MSDS 460. 
+
+The premise of this project: Create a linear program that reccomends amounts of foods to eat for n number of consecutive days (7 days, for example). The program should seek to minimize the intake of carboydrates present across all meals. The meals must meet all nutritional requirements as prescribed by The Institue of Medicine (IOM). 
 
 # FORMULATION
 
-Each food item in the "Nurtiet Data" file represents a binary decision variable. Over the course of any number days, any number of items can be selected for each day. Each food item has nutritional facts associated with it such as number of calories, grams of protein, carbs, etc. 
-
-Our decision variables will be foods to be selected for all meals in a day over the course of 5-7 days. Calories should be between 2000 and 2,500/day. Each food item should not be used more than once over the course of the planning period. 
-
-Our constraint will be to minimize carbohydrate intake. 
+Minimize the amount of carbohydrates present in 7 consecutive daily meals subject to upper and lower bounds on various nutritional constraints as prescribed by the IOM. Constraints include upper and lower bounds on daily intake of calories, vitamins, minerals, etc. 
 
 # DATA:
-- FOOD PRICES from [BLS](https://www.bls.gov/regions/mid-atlantic/data/averageretailfoodandenergyprices_usandwest_table.htm)
 - NUTRIENT REQUIREMENT DATA form [wikipedia](https://en.wikipedia.org/wiki/Dietary_Reference_Intake)
 - COMMON NUTRIENT COUNTS IN FOODS from [USDA](https://www.ars.usda.gov/northeast-area/beltsville-md-bhnrc/beltsville-human-nutrition-research-center/nutrient-data-laboratory/docs/sr28-download-files/)
-    - *Note* that the values of the nutriets (in the columns) are per 100g of the food item listed. For example "BUTTER, WITH SALT" has 15.87 g of water per 100 g of Butter with Salt 
+    - *Note* the values of the nutriets (in the columns) are per 100g of the food item listed. For example "BUTTER, WITH SALT" has 15.87 g of water per 100 g of Butter with Salt 
 
 
 
@@ -33,10 +31,31 @@ suppressPackageStartupMessages({
 })
 ```
 
-## Data
+## Raw data
+
+```{r}
+raw_nutriet_data <- suppressMessages(read_csv("data/Nutrient Data.csv"))
+message("Number of food items in raw nutriets data: ",scales::comma(nrow(raw_nutriet_data)))
+```
+
+```{r}
+message("Number of nutriets in raw nutriets data: ",scales::comma(length(raw_nutriet_data)-2))
+```
+
+```{r}
+raw_constraints <- suppressMessages(read_csv('data/nutrient-constraints.csv') %>% select(`Original Nutrient Name`:Unit))
+message("Number of constraints in raw constraints data: ",scales::comma(nrow(raw_constraints)))
+```
+
+
+## Model Data
 ```{r message=FALSE, warning=FALSE, paged.print=FALSE}
 nutriets <- read_csv("data/nutrient-categories.csv")
 constraints <- read_csv("data/nutrient-constraints.csv") %>% select(`Original Nutrient Name`:Unit)
+```
+
+```{r}
+message("Number of food items in processed food data: ",scales::comma(nrow(nutriets)))
 ```
 
 
@@ -76,6 +95,22 @@ nutriets <- nutriets %>%
                           , "CISCO", "INF FORMULA")
   ) %>% 
   filter(!grepl(c("BUTTER|OIL|MARGARINE|FAT|LARD"),Category, ignore.case = TRUE))
+
+# nutrients are all amount per 100 grams of food, so convert to per 1 gram
+nutriets <- nutriets %>% mutate_at(vars(`Water_(g)`:`Vit_A_(g)`), funs(./100))
+```
+
+## View of model data after processing
+
+### Constraints:
+```{r}
+knitr::kable(constraints)
+```
+
+### Sample of food items (decision variables). First ten nutrients 
+```{r}
+set.seed(1)
+knitr::kable(head(sample_frac(nutriets, 1)[,1:10]))
 ```
 
 
@@ -91,6 +126,7 @@ foods_used <- c("WATER")
 all_results <- list()
 
 for(day in 1:all_days){
+  # day <- 1
 
   # for development purposes, sample the nutrients list. Set to 1 to use full list
   sample_size <- 1
@@ -186,6 +222,12 @@ for(day in 1:all_days){
 
 
 ## View results
+
+All amounts are in grams per day. 
+
+For reference:
+- 1 cup = 320 grams
+- 1 liter = 1000 grams (for water)
 
 ```{r paged.print=FALSE}
 # print results:

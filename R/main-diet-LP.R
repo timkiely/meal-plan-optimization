@@ -40,6 +40,7 @@ nutriets <- nutriets %>%
   ) %>% 
   filter(!grepl(c("BUTTER|OIL|MARGARINE|FAT|LARD"),Category, ignore.case = TRUE))
 
+nutriets <- nutriets %>% mutate_at(vars(`Water_(g)`:`Vit_A_(g)`), funs(./100))
 
 # Run the LP --------------------------------------------------------------
 
