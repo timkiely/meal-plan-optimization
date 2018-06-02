@@ -1,4 +1,7 @@
 
+
+# LOW SODIUM, CARBS AND CHOLESTEROL
+
 library(tidyverse)
 library(lpSolve)
 
@@ -36,7 +39,8 @@ nutriets <- nutriets %>%
                           , "MARGARINE-LIKE SHORTENING", "BREAKFAST BAR", "FST FOODS"
                           , "PAPA JOHN'S 14\" CHS PIZZA", "EGG MIX", "JEW'S EAR"
                           , "INF FOR","BEVERAGE", "SUNFLOWER SD BUTTER","SIDE DISHES"
-                          , "CISCO", "INF FORMULA")
+                          , "CISCO", "INF FORMULA","BEVERAG","TODDL FORM","SHORTENING FRYING (HVY DUTY)"
+                          , "SHORTENING INDUSTRIAL")
   ) %>% 
   filter(!grepl(c("BUTTER|OIL|MARGARINE|FAT|LARD"),Category, ignore.case = TRUE))
 
@@ -46,7 +50,7 @@ nutriets <- nutriets %>% mutate_at(vars(`Water_(g)`:`Vit_A_(g)`), funs(./100))
 # Run the LP --------------------------------------------------------------
 
 # how many days to plan? (will loop over)
-all_days <- 7
+all_days <- 1
 
 
 foods_used <- c("WATER") # list of foods already used (water is a placeholder)
@@ -65,7 +69,7 @@ for(day in 1:all_days){
   sample_nutriets <- sample_nutriets %>% filter(!Category %in% foods_used)
   
   # set objective: minimize carbohydrates
-  objective_function <- sample_nutriets$`Carbohydrt_(g)`
+  objective_function <- sample_nutriets$`Sodium_(g)`+sample_nutriets$`Carbohydrt_(g)`+sample_nutriets$`Cholestrl_(g)`
   
   # initiate LHS matrix
   Left_Hand_Side <- matrix(numeric(nrow(sample_nutriets)), nrow = 1)
@@ -198,7 +202,7 @@ lp_analysis$sens.coef.to
 # In lpSolve,  the dual values for the constraints and the variables are
 # combined, constraints coming first...
 lp_analysis$const.count + # count of constraints plus
-lp_analysis$x.count == # count of variables equal
+  lp_analysis$x.count == # count of variables equal
   length(lp_analysis$duals) # the duals
 
 # the constrints were transposed
@@ -217,12 +221,12 @@ constraint_duals <- data_frame(nutrient = colnames(lp_analysis$constraints)
                                ,duals = lp_analysis$duals[1:lp_analysis$const.count]
                                , from = lp_analysis$duals.from[1:lp_analysis$const.count]
                                , to = lp_analysis$duals.to[1:lp_analysis$const.count]
-                               )
+)
 
 variable_duals <- data_frame(duals = lp_analysis$duals[(lp_analysis$const.count+1):length(lp_analysis$duals)]
-                               , from = lp_analysis$duals.from[(lp_analysis$const.count+1):length(lp_analysis$duals)]
-                               , to = lp_analysis$duals.to[(lp_analysis$const.count+1):length(lp_analysis$duals)]
-                               )
+                             , from = lp_analysis$duals.from[(lp_analysis$const.count+1):length(lp_analysis$duals)]
+                             , to = lp_analysis$duals.to[(lp_analysis$const.count+1):length(lp_analysis$duals)]
+)
 # non-zero duals
 lp_analysis$duals[lp_analysis$duals!=0]
 lp_analysis$duals.from
@@ -230,7 +234,7 @@ lp_analysis$duals.to
 
 
 
-
+all_results_print
 
 
 
