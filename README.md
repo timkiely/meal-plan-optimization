@@ -1,6 +1,21 @@
 Diet Optimization Analysis
 ================
 
+-   [INTRO](#intro)
+-   [FORMULATION](#formulation)
+-   [DATA:](#data)
+-   [EXAMPLE 1) 7-DAY DIET PLAN. LOW CARB](#example-1-7-day-diet-plan.-low-carb)
+    -   [Raw data](#raw-data)
+    -   [Model Data](#model-data)
+    -   [Processing](#processing)
+    -   [View of model data after processing](#view-of-model-data-after-processing)
+    -   [Run the LP in a loop for n number of days](#run-the-lp-in-a-loop-for-n-number-of-days)
+    -   [View results](#view-results)
+-   [EXAMPLE 2) 1-DAY, LOW SODIUM, LOW CHOLESTEROL, LOW CARBS](#example-2-1-day-low-sodium-low-cholesterol-low-carbs)
+    -   [Objective Cell (Min)](#objective-cell-min)
+    -   [Decision Variable Cells](#decision-variable-cells)
+    -   [Constraints](#constraints-1)
+
 INTRO
 =====
 
@@ -20,8 +35,8 @@ DATA:
 -   COMMON NUTRIENT COUNTS IN FOODS from [USDA](https://www.ars.usda.gov/northeast-area/beltsville-md-bhnrc/beltsville-human-nutrition-research-center/nutrient-data-laboratory/docs/sr28-download-files/)
     -   *Note* the values of the nutriets (in the columns) are per 100g of the food item listed. For example "BUTTER, WITH SALT" has 15.87 g of water per 100 g of Butter with Salt
 
-PROGRAM
-=======
+EXAMPLE 1) 7-DAY DIET PLAN. LOW CARB
+====================================
 
 ``` r
 suppressPackageStartupMessages({
@@ -276,9 +291,9 @@ for(day in 1:all_days){
 }
 ```
 
-    ## DAY 1: 19 items selected. 100% of data used. LP completed in 0.03secs
+    ## DAY 1: 19 items selected. 100% of data used. LP completed in 0.02secs
 
-    ## DAY 2: 15 items selected. 100% of data used. LP completed in 0.08secs
+    ## DAY 2: 15 items selected. 100% of data used. LP completed in 0.1secs
 
     ## DAY 3: 16 items selected. 100% of data used. LP completed in 0.02secs
 
@@ -367,3 +382,55 @@ knitr::kable(all_results_print[,7:14])
 | ACEROLA JUICE    |      1.049625| NA               |            NA| NA                           |            NA| NA                    |            NA|
 | WATERCHESTNUTS   |    158.510808| NA               |            NA| NA                           |            NA| NA                    |            NA|
 | OYSTER           |      3.788686| NA               |            NA| NA                           |            NA| NA                    |            NA|
+
+EXAMPLE 2) 1-DAY, LOW SODIUM, LOW CHOLESTEROL, LOW CARBS
+========================================================
+
+Includes a sensitivity analysis
+
+### Objective Cell (Min)
+
+``` r
+knitr::kable(Objective_df)
+```
+
+| Name                                          |  final\_value|
+|:----------------------------------------------|-------------:|
+| Minimization of Carbs, Sodium and Cholesterol |         131.8|
+
+### Decision Variable Cells
+
+``` r
+knitr::kable(variable_duals %>% filter(final_value>0))
+```
+
+| variable                         |  final\_value|  Reduced\_Cost|  objective\_coeficiet|  allowable\_increase|  allowable\_decrease|
+|:---------------------------------|-------------:|--------------:|---------------------:|--------------------:|--------------------:|
+| POMPANO                          |    132.753575|       0.001275|              0.001275|                1e+30|             0.310270|
+| SQUID                            |     63.171522|       0.058565|              0.058565|                1e+30|             0.001240|
+| CUCUMBER                         |    785.391490|       0.028970|              0.028970|                1e+30|             0.056840|
+| VERMICELLI                       |     47.844603|       0.823240|              0.823240|                1e+30|             0.031475|
+| EDAMAME                          |    239.905603|       0.082660|              0.082660|                1e+30|             0.293750|
+| BRAUNSCHWEIGER (A LIVER SAUSAGE) |      8.967906|       0.042570|              0.042570|                1e+30|             0.001025|
+| MAYONNAISE DRSNG                 |    181.140471|       0.007860|              0.007860|                1e+30|             0.001995|
+| TUNA                             |      2.522458|       0.000890|              0.000890|                1e+30|             0.175600|
+| JELLYFISH                        |      1.849527|       0.096950|              0.096950|                1e+30|             0.237090|
+| OOPAH (TUNICATE)                 |      4.075569|       0.000000|              0.000000|                1e+30|             0.117100|
+| WATER                            |    973.285470|       0.000700|              0.000700|                1e+30|             0.473100|
+| SISYMBRIUM SP. SEEDS             |     19.477308|       0.583520|              0.583520|                1e+30|             0.001960|
+| CHAYOTE                          |    574.210323|       0.045120|              0.045120|                1e+30|             0.303700|
+| EGG                              |     13.280154|       0.016720|              0.016720|                1e+30|             0.001180|
+| SOYBEAN                          |     83.756101|       0.069200|              0.069200|                   NA|                   NA|
+
+### Constraints
+
+``` r
+knitr::kable(Constraint_Sensitivity %>% filter(shadow_price>0))
+```
+
+| constraint             |  final\_value|  shadow\_price|  constraint\_RHS|  allowable\_increase|  allowable\_decrease|
+|:-----------------------|-------------:|--------------:|----------------:|--------------------:|--------------------:|
+| Vit\_D\_g\_Lower       |       1.5e-05|              0|          1.5e-05|            0.0000167|            0.0000135|
+| Sodium\_(g)\_Lower     |       1.5e+00|              1|          1.5e+00|            2.3000000|            1.3197210|
+| Carbohydrt\_(g)\_Lower |       1.3e+02|              1|          1.3e+02|          137.7213446|          107.1526927|
+| Cholestrl\_(g)\_Lower  |       3.0e-01|              1|          3.0e-01|            0.3301884|            0.2648597|

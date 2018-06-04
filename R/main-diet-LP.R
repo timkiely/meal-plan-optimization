@@ -96,7 +96,12 @@ for(day in 1:all_days){
                        , constraints$`Upper Bound`)
   
   # duplicate the LHS matrix since we have both upper and lower bounds
-  Left_Hand_Side_all <- rbind(Left_Hand_Side, Left_Hand_Side)
+  Left_Hand_Side_Lower <- Left_Hand_Side
+  rownames(Left_Hand_Side_Lower) <- paste0(rownames(Left_Hand_Side),"_Lower")
+  Left_Hand_Side_Upper <- Left_Hand_Side
+  rownames(Left_Hand_Side_Upper) <- paste0(rownames(Left_Hand_Side),"_Upper")
+  
+  Left_Hand_Side_all <- rbind(Left_Hand_Side_Lower, Left_Hand_Side_Upper)
   
   # check the rows and columns match up:
   all_equal(nrow(Left_Hand_Side_all)
@@ -218,6 +223,8 @@ constraint_duals <- data_frame(nutrient = colnames(lp_analysis$constraints)
                                , from = lp_analysis$duals.from[1:lp_analysis$const.count]
                                , to = lp_analysis$duals.to[1:lp_analysis$const.count]
                                )
+
+constraint_duals %>% filter(duals>0)
 
 variable_duals <- data_frame(duals = lp_analysis$duals[(lp_analysis$const.count+1):length(lp_analysis$duals)]
                                , from = lp_analysis$duals.from[(lp_analysis$const.count+1):length(lp_analysis$duals)]

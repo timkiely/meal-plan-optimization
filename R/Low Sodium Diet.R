@@ -100,7 +100,12 @@ for(day in 1:all_days){
                        , constraints$`Upper Bound`)
   
   # duplicate the LHS matrix since we have both upper and lower bounds
-  Left_Hand_Side_all <- rbind(Left_Hand_Side, Left_Hand_Side)
+  Left_Hand_Side_Lower <- Left_Hand_Side
+  rownames(Left_Hand_Side_Lower) <- paste0(rownames(Left_Hand_Side),"_Lower")
+  Left_Hand_Side_Upper <- Left_Hand_Side
+  rownames(Left_Hand_Side_Upper) <- paste0(rownames(Left_Hand_Side),"_Upper")
+  
+  Left_Hand_Side_all <- rbind(Left_Hand_Side_Lower, Left_Hand_Side_Upper)
   
   # check the rows and columns match up:
   all_equal(nrow(Left_Hand_Side_all)
@@ -191,13 +196,8 @@ all_results_print <- all_results %>%
 keep_LPs %>% map(~.x$objval)
 lp_analysis <- keep_LPs[[1]]
 
-lp_analysis$sens.coef.from
-lp_analysis$sens.coef.to
-
-
 # The dual price gives the improvement in the objective function if the constraint is relaxed by one unit
 # "Dual price", also known as Shadow Price
-
 
 # In lpSolve,  the dual values for the constraints and the variables are
 # combined, constraints coming first...
@@ -217,11 +217,36 @@ lp_analysis$x.count == length(lp_analysis$objective)
 # value of the constraint, assuming all other coefficients remain constant. 
 # If a shadow price is positive, a unit increase in the RHS value of the 
 # associated constraint results in an increase in the optimal objective function value.
-constraint_duals <- data_frame(nutrient = colnames(lp_analysis$constraints)
-                               ,duals = lp_analysis$duals[1:lp_analysis$const.count]
-                               , from = lp_analysis$duals.from[1:lp_analysis$const.count]
-                               , to = lp_analysis$duals.to[1:lp_analysis$const.count]
-)
+
+
+
+##################### LEFT OFF : NEED TO MULTIPLY THE SOLUTION AMOUNTS BY THE NUTRIENTS TO GET FINAL CONSTRAINT VALUES
+
+# Sensitivity Report
+analysis_of_nutrients <- 
+  sample_nutriets %>% 
+  mutate(solution = lp_analysis$solution) %>% 
+  mutate_at(vars(`Water_(g)`:`Vit_A_(g)`), funs(.*solution)) %>% 
+  filter(solution>0) %>% 
+  select(-solution, -Category) %>% 
+  summarise_all(sum) %>% 
+  gather(constraint, final_value)
+
+all_final_values <- bind_rows(
+  analysis_of_nutrients %>% mutate(constraint = paste0(constraint,"_Lower"))
+  ,analysis_of_nutrients %>% mutate(constraint = paste0(constraint,"_Upper"))
+  )
+
+Constraint_Sensitivity <- data_frame(constraint = colnames(lp_analysis$constraints)
+                                     , shadow_price = lp_analysis$duals[1:lp_analysis$const.count]
+                                     , constrain_RHS = Right_Hand_Side
+                                     , allowable_increase = lp_analysis$duals.to[1:lp_analysis$const.count]
+                                     , allowable_decrease = lp_analysis$duals.from[1:lp_analysis$const.count]
+                                     ) %>% 
+  left_join(all_final_values, by = "constraint") %>% 
+  select(constraint, final_value, everything())
+
+Constraint_Sensitivity %>% filter(shadow_price>0)
 
 variable_duals <- data_frame(duals = lp_analysis$duals[(lp_analysis$const.count+1):length(lp_analysis$duals)]
                              , from = lp_analysis$duals.from[(lp_analysis$const.count+1):length(lp_analysis$duals)]
@@ -234,7 +259,6 @@ lp_analysis$duals.to
 
 
 
-all_results_print
 
 
 
