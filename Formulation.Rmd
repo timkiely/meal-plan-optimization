@@ -1,7 +1,6 @@
 ---
 title: "Formulation"
-output: github_document
-fontsize: 20pt 
+output: html_document
 ---
 
 
