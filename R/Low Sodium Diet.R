@@ -220,10 +220,27 @@ lp_analysis$x.count == length(lp_analysis$objective)
 
 
 
-##################### LEFT OFF : NEED TO MULTIPLY THE SOLUTION AMOUNTS BY THE NUTRIENTS TO GET FINAL CONSTRAINT VALUES
+## Sensitivity Report
+# 1) Objective
+Objective_df <- data_frame(Name = "Minimization of Carbs, Sodium and Cholesterol"
+                           , final_value = lp_analysis$objval)
 
-# Sensitivity Report
-analysis_of_nutrients <- 
+# 2) variables
+
+variable_duals <- data_frame(variable = sample_nutriets$Category
+                             , final_value = lp_analysis$solution
+                             , objective_coeficiet = objective_function
+                             , allowable_increase = lp_analysis$sens.coef.to[(lp_analysis$const.count+1):length(lp_analysis$duals)]
+                             , allowable_decrease = lp_analysis$sens.coef.from[(lp_analysis$const.count+1):length(lp_analysis$duals)]
+) %>% 
+  mutate(Reduced_Cost = objective_coeficiet - lp_analysis$duals[(lp_analysis$const.count+1):length(lp_analysis$duals)]) %>% 
+  select(variable, final_value, Reduced_Cost, everything())
+
+variable_duals %>% filter(final_value>0)
+
+
+# 3) constraints
+final_nutrients <- 
   sample_nutriets %>% 
   mutate(solution = lp_analysis$solution) %>% 
   mutate_at(vars(`Water_(g)`:`Vit_A_(g)`), funs(.*solution)) %>% 
@@ -233,29 +250,24 @@ analysis_of_nutrients <-
   gather(constraint, final_value)
 
 all_final_values <- bind_rows(
-  analysis_of_nutrients %>% mutate(constraint = paste0(constraint,"_Lower"))
-  ,analysis_of_nutrients %>% mutate(constraint = paste0(constraint,"_Upper"))
+  final_nutrients %>% mutate(constraint = paste0(constraint,"_Lower"))
+  , final_nutrients %>% mutate(constraint = paste0(constraint,"_Upper"))
   )
 
 Constraint_Sensitivity <- data_frame(constraint = colnames(lp_analysis$constraints)
                                      , shadow_price = lp_analysis$duals[1:lp_analysis$const.count]
-                                     , constrain_RHS = Right_Hand_Side
+                                     , constraint_RHS = Right_Hand_Side
                                      , allowable_increase = lp_analysis$duals.to[1:lp_analysis$const.count]
                                      , allowable_decrease = lp_analysis$duals.from[1:lp_analysis$const.count]
                                      ) %>% 
   left_join(all_final_values, by = "constraint") %>% 
   select(constraint, final_value, everything())
 
-Constraint_Sensitivity %>% filter(shadow_price>0)
+non_negative_sensitivities <- Constraint_Sensitivity %>% filter(shadow_price>0)
 
-variable_duals <- data_frame(duals = lp_analysis$duals[(lp_analysis$const.count+1):length(lp_analysis$duals)]
-                             , from = lp_analysis$duals.from[(lp_analysis$const.count+1):length(lp_analysis$duals)]
-                             , to = lp_analysis$duals.to[(lp_analysis$const.count+1):length(lp_analysis$duals)]
-)
-# non-zero duals
-lp_analysis$duals[lp_analysis$duals!=0]
-lp_analysis$duals.from
-lp_analysis$duals.to
+
+
+
 
 
 

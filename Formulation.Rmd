@@ -1,0 +1,35 @@
+---
+title: "Formulation"
+output: github_document
+fontsize: 20pt 
+---
+
+
+**Let:**
+
+$x_1, x_2 ... x_{m} =$ amount (in grams) of each food item in the USDA rolled-up list
+
+${\alpha}_{ij} =$ amount (in grams) of nutrient $j$ in food item $i$ 
+
+$L_{j}=$ lower nutritional bound for all nutrients $j=1...32$
+
+$U_{j}=$ upper nutritional bound for all nutrients $j=1...32$
+
+
+**Linear Programming Model:**
+
+*For low-carb diet:*
+
+minimize: $z = \sum_{i=1}^{i = m}x_{ij_1}$ where $j_1$ = carbohydrates
+
+*For low-carb, low-sodium, low-cholesterol diet:*
+
+minimize: $z = \sum_{i=1}^{i = m}x_{ij_1} + x_{ij_2} + x_{ij_3}$ where $j_1$ = carbohydrates, $j_2$ = sodium, $j_3$ = cholesterol
+
+**Subject to:**
+
+$x_1, x_2 ... x_{m} \geq 0$  non-negativity constraint
+
+$\sum_{i=1}^{i = m}{\alpha}_{ij} x_{ij} \geq L_{ij}$, $j = 1...32$ sum of nutrient j for all foods i must meet the minimum nutritional requirement $L$
+
+$\sum_{i=1}^{i = m}{\alpha}_{ij} x_{ij} \leq U_{ij}$, $j = 1...32$ sum of nutrient j for all foods i must not exceed the maximum nutritional requirement $U$

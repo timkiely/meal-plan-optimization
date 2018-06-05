@@ -16,7 +16,16 @@ The premise of this project: Create a linear program that reccomends amounts of 
 
 # FORMULATION
 
-Minimize the amount of carbohydrates present in 7 consecutive daily meals subject to upper and lower bounds on various nutritional constraints as prescribed by the IOM. Constraints include upper and lower bounds on daily intake of calories, vitamins, minerals, etc. 
+Minimize the amount of a given nutrient or set of nutrients, e.g., carbohydrates, present in daily meals subject to upper and lower bounds on various nutritional constraints as prescribed by the IOM. Constraints include upper and lower bounds on daily intake of calories, vitamins, minerals, etc. 
+
+```{r child = 'Formulation.Rmd'}
+
+```
+
+
+Decision variables:xij= amount (in tons per day) of fuel i used by plant j for the mix.Linear programming model:minimize  z = m1in1jijixc,subject tojm1iijijbx,   j = 1, ..., n,bxen1jm1iijijj,0xij,   i = 1, ..., m,  j = 1, .., n.
+
+
 
 # DATA:
 - NUTRIENT REQUIREMENT DATA form [wikipedia](https://en.wikipedia.org/wiki/Dietary_Reference_Intake)
