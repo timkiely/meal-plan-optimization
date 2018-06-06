@@ -1,6 +1,6 @@
 ---
 title: "Formulation"
-output: html_document
+output: pdf_document
 ---
 
 

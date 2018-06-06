@@ -25,37 +25,16 @@ The premise of this project: Create a linear program that reccomends amounts of 
 FORMULATION
 ===========
 
-**NOTE: the formulation format does not print correctly on GitHub markdown. See `Formulation.hmtl` for better formatting**
-
 Minimize the amount of a given nutrient or set of nutrients, e.g., carbohydrates, present in daily meals subject to upper and lower bounds on various nutritional constraints as prescribed by the IOM. Constraints include upper and lower bounds on daily intake of calories, vitamins, minerals, etc.
 
-**Let:**
+``` r
+knitr::include_graphics("Formulation.pdf")
+```
 
-*x*<sub>1</sub>, *x*<sub>2</sub>...*x*<sub>*m*</sub>= amount (in grams) of each food item in the USDA rolled-up list
-
-*α*<sub>*i**j*</sub>= amount (in grams) of nutrient *j* in food item *i*
-
-*L*<sub>*j*</sub>= lower nutritional bound for all nutrients *j* = 1...32
-
-*U*<sub>*j*</sub>= upper nutritional bound for all nutrients *j* = 1...32
-
-**Linear Programming Model:**
-
-*For low-carb diet:*
-
-minimize: $z = \\sum\_{i=1}^{i = m}x\_{ij\_1}$ where *j*<sub>1</sub> = carbohydrates
-
-*For low-carb, low-sodium, low-cholesterol diet:*
-
-minimize: $z = \\sum\_{i=1}^{i = m}x\_{ij\_1} + x\_{ij\_2} + x\_{ij\_3}$ where *j*<sub>1</sub> = carbohydrates, *j*<sub>2</sub> = sodium, *j*<sub>3</sub> = cholesterol
-
-**Subject to:**
-
-*x*<sub>1</sub>, *x*<sub>2</sub>...*x*<sub>*m*</sub> ≥ 0 non-negativity constraint
-
-$\\sum\_{i=1}^{i = m}{\\alpha}\_{ij} x\_{ij} \\geq L\_{ij}$, *j* = 1...32 sum of nutrient j for all foods i must meet the minimum nutritional requirement *L*
-
-$\\sum\_{i=1}^{i = m}{\\alpha}\_{ij} x\_{ij} \\leq U\_{ij}$, *j* = 1...32 sum of nutrient j for all foods i must not exceed the maximum nutritional requirement *U*
+<img src="Formulation.pdf" alt="Formulation" width="100%" />
+<p class="caption">
+Formulation
+</p>
 
 DATA:
 =====
@@ -70,11 +49,7 @@ EXAMPLE 1) 7-DAY DIET PLAN. LOW CARB
 ``` r
 suppressPackageStartupMessages({
   library(tidyverse)
-  
-  
   library(lpSolve)
-  
-  
 })
 ```
 
@@ -334,9 +309,9 @@ for(day in 1:all_days){
 }
 ```
 
-    ## DAY 1: 19 items selected. 100% of data used. LP completed in 0.03secs
+    ## DAY 1: 19 items selected. 100% of data used. LP completed in 0.02secs
 
-    ## DAY 2: 15 items selected. 100% of data used. LP completed in 0.08secs
+    ## DAY 2: 15 items selected. 100% of data used. LP completed in 0.09secs
 
     ## DAY 3: 16 items selected. 100% of data used. LP completed in 0.02secs
 
