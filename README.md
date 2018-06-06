@@ -28,10 +28,10 @@ FORMULATION
 Minimize the amount of a given nutrient or set of nutrients, e.g., carbohydrates, present in daily meals subject to upper and lower bounds on various nutritional constraints as prescribed by the IOM. Constraints include upper and lower bounds on daily intake of calories, vitamins, minerals, etc.
 
 ``` r
-knitr::include_graphics("Formulation.pdf")
+knitr::include_graphics("Formulation.png")
 ```
 
-<img src="Formulation.pdf" alt="Formulation" width="100%" />
+<img src="Formulation.png" alt="Formulation" width="100%" />
 <p class="caption">
 Formulation
 </p>

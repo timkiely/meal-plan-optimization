@@ -19,7 +19,7 @@ The premise of this project: Create a linear program that reccomends amounts of 
 Minimize the amount of a given nutrient or set of nutrients, e.g., carbohydrates, present in daily meals subject to upper and lower bounds on various nutritional constraints as prescribed by the IOM. Constraints include upper and lower bounds on daily intake of calories, vitamins, minerals, etc. 
 
 ```{r label, out.width = "100%", fig.cap = "Formulation"}
-knitr::include_graphics("Formulation.pdf")
+knitr::include_graphics("Formulation.png")
 ```
 
 # DATA:
