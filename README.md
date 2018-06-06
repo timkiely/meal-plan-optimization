@@ -9,24 +9,23 @@ Diet Optimization Analysis
     -   [Model Data](#model-data)
     -   [Processing](#processing)
     -   [View of model data after processing](#view-of-model-data-after-processing)
-    -   [Run the LP in a loop for n number of days](#run-the-lp-in-a-loop-for-n-number-of-days)
+    -   [Run the LP in a loop for n number of days for LOW CARB DIET](#run-the-lp-in-a-loop-for-n-number-of-days-for-low-carb-diet)
     -   [View results](#view-results)
--   [EXAMPLE 2) 1-DAY, LOW SODIUM, LOW CHOLESTEROL, LOW CARBS](#example-2-1-day-low-sodium-low-cholesterol-low-carbs)
-    -   [Objective Cell (Min)](#objective-cell-min)
-    -   [Decision Variable Cells](#decision-variable-cells)
-    -   [Constraints](#constraints-1)
+-   [EXAMPLE 2) 1-DAY, LOW SODIUM & LOW CHOLESTEROL & LOW CARB](#example-2-1-day-low-sodium-low-cholesterol-low-carb)
+    -   [Results: Low Carb & Low Sodium & Low Cholesterol](#results-low-carb-low-sodium-low-cholesterol)
+    -   [Sensitivity Analysis](#sensitivity-analysis)
 
 INTRO
 =====
 
 This project directory contains code and data for a Meal Plan Optimization project as part of MSDS 460.
 
-The premise of this project: Create a linear program that reccomends amounts of foods to eat for n number of consecutive days (7 days, for example). The program should seek to minimize the intake of carboydrates present across all meals. The meals must meet all nutritional requirements as prescribed by The Institue of Medicine (IOM).
+The premise of this project: Create a linear program that reccomends amounts of foods to eat for n number of consecutive days (7 days, for example). The program can take various objective functions, for example, minimize carbs, sodium and/or cholesterol. The meals must meet all nutritional requirements as prescribed by The Institue of Medicine (IOM).
 
 FORMULATION
 ===========
 
-**NOTE: the formulation format does not print correctly on GitHub markdown. See `Formulation.hmtl`**
+**NOTE: the formulation format does not print correctly on GitHub markdown. See `Formulation.hmtl` for better formatting**
 
 Minimize the amount of a given nutrient or set of nutrients, e.g., carbohydrates, present in daily meals subject to upper and lower bounds on various nutritional constraints as prescribed by the IOM. Constraints include upper and lower bounds on daily intake of calories, vitamins, minerals, etc.
 
@@ -63,7 +62,7 @@ DATA:
 
 -   NUTRIENT REQUIREMENT DATA form [wikipedia](https://en.wikipedia.org/wiki/Dietary_Reference_Intake)
 -   COMMON NUTRIENT COUNTS IN FOODS from [USDA](https://www.ars.usda.gov/northeast-area/beltsville-md-bhnrc/beltsville-human-nutrition-research-center/nutrient-data-laboratory/docs/sr28-download-files/)
-    -   *Note* the values of the nutriets (in the columns) are per 100g of the food item listed. For example "BUTTER, WITH SALT" has 15.87 g of water per 100 g of Butter with Salt
+-   *Note* the values of the nutriets (in the columns) are per 100g of the food item listed. For example "BUTTER, WITH SALT" has 15.87 g of water per 100 g of Butter with Salt
 
 EXAMPLE 1) 7-DAY DIET PLAN. LOW CARB
 ====================================
@@ -71,7 +70,11 @@ EXAMPLE 1) 7-DAY DIET PLAN. LOW CARB
 ``` r
 suppressPackageStartupMessages({
   library(tidyverse)
+  
+  
   library(lpSolve)
+  
+  
 })
 ```
 
@@ -200,24 +203,24 @@ knitr::kable(constraints)
 | Fiber                    | Fiber\_TD\_(g)     |      2.5e+01|      5.0e+01| g    |
 | Cholesterol              | Cholestrl\_(g)     |      3.0e-01|      6.0e-01| g    |
 
-### Sample of food items (decision variables). First ten nutrients
+### Sample of food items (decision variables)
 
 ``` r
 set.seed(1)
-knitr::kable(head(sample_frac(nutriets, 1)[,1:10]))
+knitr::kable(head(sample_frac(nutriets, 1)))
 ```
 
-| Category        |  Water\_(g)|  Energ\_Kcal|  Protein\_(g)|  Carbohydrt\_(g)|  Fiber\_TD\_(g)|  Calcium\_(g)|  Iron\_(g)|  Magnesium\_(g)|  Phosphorus\_(g)|
-|:----------------|-----------:|------------:|-------------:|----------------:|---------------:|-------------:|----------:|---------------:|----------------:|
-| EGG SUBSTITUTE  |      0.0386|         4.44|        0.5550|           0.2180|           0.000|       0.00326|  0.0000316|         0.00065|          0.00478|
-| HICKORYNUTS     |      0.0265|         6.57|        0.1272|           0.1825|           0.064|       0.00061|  0.0000212|         0.00173|          0.00336|
-| ORANGES         |      0.8634|         0.49|        0.0094|           0.1189|           0.024|       0.00043|  0.0000010|         0.00010|          0.00017|
-| TURKEY HAM      |      0.7200|         1.24|        0.1960|           0.0293|           0.000|       0.00005|  0.0000135|         0.00020|          0.00304|
-| COTTONSEED MEAL |      0.0120|         3.67|        0.4910|           0.3843|           0.000|       0.00504|  0.0001335|         0.00760|          0.01684|
-| TREE FERN       |      0.8860|         0.40|        0.0029|           0.1088|           0.037|       0.00008|  0.0000016|         0.00005|          0.00004|
+| Category        |  Water\_(g)|  Energ\_Kcal|  Protein\_(g)|  Carbohydrt\_(g)|  Fiber\_TD\_(g)|  Calcium\_(g)|  Iron\_(g)|  Magnesium\_(g)|  Phosphorus\_(g)|  Potassium\_(g)|  Sodium\_(g)|  Zinc\_(g)|  Copper\_g)|  Manganese\_(g)|  Selenium\_(g)|  Vit\_C\_(g)|  Thiamin\_(g)|  Riboflavin\_(g)|  Niacin\_(g)|  Panto\_Acid\_g)|  Vit\_B6\_(g)|  Folate\_Tot\_(g)|  Choline\_Tot\_ (g)|  Vit\_B12\_(g)|  Vit\_E\_(g)|  Vit\_D\_g|  Vit\_K\_(g)|  Cholestrl\_(g)|  Vit\_A\_(g)|
+|:----------------|-----------:|------------:|-------------:|----------------:|---------------:|-------------:|----------:|---------------:|----------------:|---------------:|------------:|----------:|-----------:|---------------:|--------------:|------------:|-------------:|----------------:|------------:|----------------:|-------------:|-----------------:|-------------------:|--------------:|------------:|----------:|------------:|---------------:|------------:|
+| EGG SUBSTITUTE  |      0.0386|         4.44|        0.5550|           0.2180|           0.000|       0.00326|  0.0000316|         0.00065|          0.00478|         0.00744|      0.00800|  0.0000182|     2.1e-06|        8.00e-07|        1.3e-06|     0.000008|      2.30e-06|         1.76e-05|     5.80e-06|         3.38e-05|       1.4e-06|           1.3e-06|            0.001176|              0|     1.26e-05|          0|            0|         0.00572|      3.7e-06|
+| HICKORYNUTS     |      0.0265|         6.57|        0.1272|           0.1825|           0.064|       0.00061|  0.0000212|         0.00173|          0.00336|         0.00436|      0.00001|  0.0000431|     7.4e-06|        4.61e-05|        1.0e-07|     0.000020|      8.70e-06|         1.30e-06|     9.10e-06|         1.75e-05|       1.9e-06|           4.0e-07|            0.000000|              0|     0.00e+00|          0|            0|         0.00000|      4.0e-07|
+| ORANGES         |      0.8634|         0.49|        0.0094|           0.1189|           0.024|       0.00043|  0.0000010|         0.00010|          0.00017|         0.00179|      0.00000|  0.0000008|     4.0e-07|        2.00e-07|        0.0e+00|     0.000532|      9.00e-07|         4.00e-07|     4.00e-06|         2.50e-06|       6.0e-07|           3.0e-07|            0.000084|              0|     1.80e-06|          0|            0|         0.00000|      7.0e-07|
+| TURKEY HAM      |      0.7200|         1.24|        0.1960|           0.0293|           0.000|       0.00005|  0.0000135|         0.00020|          0.00304|         0.00299|      0.01038|  0.0000236|     1.1e-06|        0.00e+00|        4.0e-07|     0.000000|      5.00e-07|         2.50e-06|     3.53e-05|         0.00e+00|       2.3e-06|           1.0e-07|            0.000591|              0|     3.90e-06|          0|            0|         0.00067|      0.0e+00|
+| COTTONSEED MEAL |      0.0120|         3.67|        0.4910|           0.3843|           0.000|       0.00504|  0.0001335|         0.00760|          0.01684|         0.01869|      0.00037|  0.0001232|     0.0e+00|        2.26e-05|        0.0e+00|     0.000025|      2.22e-05|         4.20e-06|     4.29e-05|         4.70e-06|       8.1e-06|           2.4e-06|            0.000000|              0|     0.00e+00|          0|            0|         0.00000|      1.4e-06|
+| TREE FERN       |      0.8860|         0.40|        0.0029|           0.1088|           0.037|       0.00008|  0.0000016|         0.00005|          0.00004|         0.00005|      0.00123|  0.0000031|     2.0e-06|        5.40e-06|        0.0e+00|     0.000300|      0.00e+00|         3.00e-06|     3.50e-05|         6.00e-07|       1.8e-06|           2.0e-07|            0.000000|              0|     0.00e+00|          0|            0|         0.00000|      6.0e-07|
 
-Run the LP in a loop for n number of days
------------------------------------------
+Run the LP in a loop for n number of days for LOW CARB DIET
+-----------------------------------------------------------
 
 ``` r
 # how many days should we plan? (each day is a loop iteration)
@@ -229,7 +232,7 @@ all_results <- list()
 
 for(day in 1:all_days){
   # day <- 1
-
+  
   # for development purposes, sample the nutrients list. Set to 1 to use full list
   sample_size <- 1
   set.seed(1)
@@ -253,7 +256,11 @@ for(day in 1:all_days){
     constraint_lower <- contraint_row$`Lower Bound`
     constraint_upper <- contraint_row$`Upper Bound`
     
-    nutirent_column <- sample_nutriets %>% select_at(vars(constraint_name)) %>% unlist() %>% as.numeric() %>% matrix(nrow = 1)
+    nutirent_column <- sample_nutriets %>% 
+      select_at(vars(constraint_name)) %>% 
+      unlist() %>% as.numeric() %>% 
+      matrix(nrow = 1)
+    
     rownames(nutirent_column) <- constraint_name
     Left_Hand_Side <- rbind(Left_Hand_Side, nutirent_column)
   }
@@ -261,7 +268,7 @@ for(day in 1:all_days){
   # remove the initialization row at the top
   Left_Hand_Side <- Left_Hand_Side[2:nrow(Left_Hand_Side),]
   
-  # direction of the constraint lower and upper bound
+  # direction of the constraints. Half are lower bounds half are upper bounds
   constraint_directions <- c(rep(">=", nrow(Left_Hand_Side))
                              ,rep("<=", nrow(Left_Hand_Side))
   )
@@ -271,7 +278,12 @@ for(day in 1:all_days){
                        , constraints$`Upper Bound`)
   
   # duplicate the LHS matrix since we have both upper and lower bounds
-  Left_Hand_Side_all <- rbind(Left_Hand_Side, Left_Hand_Side)
+  Left_Hand_Side_Lower <- Left_Hand_Side
+  rownames(Left_Hand_Side_Lower) <- paste0(rownames(Left_Hand_Side),"_Lower")
+  Left_Hand_Side_Upper <- Left_Hand_Side
+  rownames(Left_Hand_Side_Upper) <- paste0(rownames(Left_Hand_Side),"_Upper")
+  
+  Left_Hand_Side_all <- rbind(Left_Hand_Side_Lower, Left_Hand_Side_Upper)
   
   ## check the rows and columns match up:
   # all_equal(nrow(Left_Hand_Side_all)
@@ -279,10 +291,10 @@ for(day in 1:all_days){
   #           , length(constraint_directions)
   # )
   # 
-  # all_equal(length(objective_function)
-  #           , ncol(Left_Hand_Side_all)
-  # )
-
+  # all_equal(length(objective_function), ncol(Left_Hand_Side_all))
+  #
+  
+  # run the sover
   lp_time_start <- Sys.time()
   (LP_Solved <- lp(direction = "min"
                    , objective.in = objective_function
@@ -302,6 +314,7 @@ for(day in 1:all_days){
   # record results
   result_objective <- LP_Solved$objval
   
+  # record non-zero decision variables
   results <- data_frame(
     Food = sample_nutriets$Category[LP_Solved$solution>0]
     ,`Amount(g)` = LP_Solved$solution[LP_Solved$solution>0]
@@ -323,7 +336,7 @@ for(day in 1:all_days){
 
     ## DAY 1: 19 items selected. 100% of data used. LP completed in 0.03secs
 
-    ## DAY 2: 15 items selected. 100% of data used. LP completed in 0.09secs
+    ## DAY 2: 15 items selected. 100% of data used. LP completed in 0.08secs
 
     ## DAY 3: 16 items selected. 100% of data used. LP completed in 0.02secs
 
@@ -340,7 +353,10 @@ View results
 
 All amounts are in grams per day.
 
-For reference: - 1 cup = 320 grams - 1 liter = 1000 grams (for water)
+**For reference:**
+
+-   1 cup = 320 grams
+-   1 liter = 1000 grams (for water)
 
 ``` r
 # print results:
@@ -413,10 +429,36 @@ knitr::kable(all_results_print[,7:14])
 | WATERCHESTNUTS   |    158.510808| NA               |            NA| NA                           |            NA| NA                    |            NA|
 | OYSTER           |      3.788686| NA               |            NA| NA                           |            NA| NA                    |            NA|
 
-EXAMPLE 2) 1-DAY, LOW SODIUM, LOW CHOLESTEROL, LOW CARBS
-========================================================
+EXAMPLE 2) 1-DAY, LOW SODIUM & LOW CHOLESTEROL & LOW CARB
+=========================================================
 
-Includes a sensitivity analysis
+Results: Low Carb & Low Sodium & Low Cholesterol
+------------------------------------------------
+
+``` r
+knitr::kable(all_results_print)
+```
+
+| Day 1 food                       |  Day 1 amt(g)|
+|:---------------------------------|-------------:|
+| POMPANO                          |    132.753575|
+| SQUID                            |     63.171522|
+| CUCUMBER                         |    785.391490|
+| VERMICELLI                       |     47.844603|
+| EDAMAME                          |    239.905603|
+| BRAUNSCHWEIGER (A LIVER SAUSAGE) |      8.967906|
+| MAYONNAISE DRSNG                 |    181.140471|
+| TUNA                             |      2.522458|
+| JELLYFISH                        |      1.849527|
+| OOPAH (TUNICATE)                 |      4.075569|
+| WATER                            |    973.285470|
+| SISYMBRIUM SP. SEEDS             |     19.477308|
+| CHAYOTE                          |    574.210323|
+| EGG                              |     13.280154|
+| SOYBEAN                          |     83.756101|
+
+Sensitivity Analysis
+--------------------
 
 ### Objective Cell (Min)
 
